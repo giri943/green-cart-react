@@ -1,0 +1,20 @@
+import React from 'react'
+import ProductCard from './ProductCard'
+import { useAppContext } from '../context/AppContext'
+const BestSeller = () => {
+    const { products } = useAppContext()    
+    console.log();
+    
+    return (
+        <div className='mt-16'>
+            <p className='text-2xl md:text-3xl font-medium'>BestSeller</p>
+            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-6 mt-6'>
+                {products.filter((product) => product.category ==='Vegetables' || product.category ==='Fruits').map((product, index) => (
+                    <ProductCard key={index} product={product} />
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default BestSeller
