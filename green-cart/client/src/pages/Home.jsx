@@ -4,6 +4,7 @@ import CategoriesList from '../components/CategoriesList'
 import BestSeller from '../components/BestSeller'
 import BottomBanner from '../components/BottomBanner'
 import NewsLetter from '../components/NewsLetter'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
