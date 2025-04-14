@@ -2,6 +2,7 @@ import React from 'react'
 import MainBanner from '../components/MainBanner'
 import CategoriesList from '../components/CategoriesList'
 import BestSeller from '../components/BestSeller'
+import BottomBanner from '../components/BottomBanner'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         <MainBanner />
         <CategoriesList />
         <BestSeller />
+        <BottomBanner />
     </div>
   )
 }
